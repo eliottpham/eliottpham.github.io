@@ -13,15 +13,15 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Vật lí - toán"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
+    organization: "Khoa Vật lí - trường đại học Sư phạm Tp.HCM"
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website."
+    description: "Blog cá nhân lưu trữ đề thi, học liệu và hỗ trợ giáo dục cho sinh viên Vật lí."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "MakeOwnable"              # Twitter/X handle for Twitter Cards (without @)
@@ -157,7 +157,8 @@ hugoblox:
   content:
     # Math rendering
     math:
-      enable: false
+      enable: true
+      provider: 'mathjax'
     # Table of contents
     toc:
       enable: true
@@ -184,15 +185,11 @@ hugoblox:
   # User comments system
   # ────────────────────────────────────────────────────────────────────────────
   comments:
-    enable: false
-    provider: ""                        # giscus | disqus
-    giscus:
-      repo: ""
-      repo_id: ""
-      category: ""
-      category_id: ""
+    enable: true
+    provider: "disqus"                        # giscus | disqus
     disqus:
-      shortname: ""
+      shortname: "https://eliottpham.github.io/" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
+      show_count: true # Bật tính năng đếm số lượng comment hiển thị ngoài trang chủ
 
   # ────────────────────────────────────────────────────────────────────────────
   # ANALYTICS

@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
+title: 'Vật lí - toán'
 baseURL: 'https://example.com/' # Website URL
 
 ############################
@@ -34,7 +34,8 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
+# Ngôn ngữ mặc định của web
+defaultContentLanguage: vi
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true

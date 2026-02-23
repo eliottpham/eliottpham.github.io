@@ -3,8 +3,15 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
-en:
-  languageCode: en-us
+  vi:
+    languageName: Tiếng Việt
+    languageDirection: ltr
+    languageCode: vi-VN # Mã vùng ngôn ngữ (Giúp SEO tốt hơn trên Google Việt Nam)
+    title: Vật lí - toán
+    params: 
+      description: Blog này được tạo ra nhằm lưu hỗ trợ giáo dục, lưu trữ đề thi, học liệu tham khảo cho sinh viên Vật lí
+  #en:
+    #languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 

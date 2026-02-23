@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: 'Vật lí - toán'
 baseURL: 'https://eliottpham.github.io/' # Website URL
-
+disqusShortname: 'https-eliottpham-github-io'
 ############################
 ## PAGE OPTIONS
 ############################

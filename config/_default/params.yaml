@@ -184,9 +184,9 @@ hugoblox:
   # COMMENTS
   # User comments system
   # ────────────────────────────────────────────────────────────────────────────
-  comment:
+  comments:
     enable: true
-    provider: "disqus"                        # giscus | disqus
+    provider: "disqus"                       # giscus | disqus
     disqus:
       shortname: "https-eliottpham-github-io" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
       show_count: true # Bật tính năng đếm số lượng comment hiển thị ngoài trang chủ

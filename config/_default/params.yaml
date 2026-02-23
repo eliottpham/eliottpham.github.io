@@ -186,11 +186,21 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   comments:
     enable: true
-    provider: "disqus"                       # giscus | disqus
-    disqus:
-      shortname: "https-eliottpham-github-io" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
-      show_count: true # Bật tính năng đếm số lượng comment hiển thị ngoài trang chủ
-
+    provider: "giscus"                       # giscus | disqus
+    #disqus:
+    #  shortname: "https-eliottpham-github-io" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
+    #  show_count: true # Bật tính năng đếm số lượng comment hiển thị ngoài trang chủ
+    giscus:
+      repo: "eliottpham/eliottpham.github.io"
+      repo_id: "R_kgDORVkLvw"         # Lấy từ trang giscus.app
+      category: 'General'                 # Thường là Announcements hoặc General
+      category_id: 'DIC_kwDORVkLv84C3Cgz' # Lấy từ trang giscus.app
+      mapping: 'pathname'
+      strict: false
+      reactions_enabled: true
+      emit_metadata: false
+      theme: 'preferred_color_scheme'          # ĐÂY LÀ CHÌA KHÓA: Nó sẽ tự động đổi màu theo chế độ Sáng/Tối của web!
+      lang: 'vi'                                # Để tiếng Việt cho khung bình luận
   # ────────────────────────────────────────────────────────────────────────────
   # ANALYTICS
   # Traffic and behavior analytics

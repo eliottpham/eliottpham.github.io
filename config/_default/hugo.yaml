@@ -14,7 +14,7 @@ baseURL: 'https://example.com/' # Website URL
 cascade:
   # Blog post options
   - _target:
-      path: /blog/**
+      path: **
       kind: page
     pager: true
     editable: true

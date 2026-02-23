@@ -5,7 +5,7 @@
 
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: 'Vật lí - toán'
-baseURL: 'https://example.com/' # Website URL
+baseURL: 'https://eliottpham.github.io/' # Website URL
 
 ############################
 ## PAGE OPTIONS
@@ -14,7 +14,7 @@ baseURL: 'https://example.com/' # Website URL
 cascade:
   # Blog post options
   - _target:
-      path: **
+      path: "/**" # Dùng dấu ** để áp dụng cho mọi trang trong website
       kind: page
     pager: true
     editable: true

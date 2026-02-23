@@ -148,6 +148,15 @@ a. Trong suốt
 - Ta không thể sử dụng tinh thể KDP vì vùng hấp thụ của KDP ngay khoảng $250\text{nm} - 260\text{nm}$. Tia $266\text{ nm}$ sinh ra nằm quá sát vùng cộng hưởng này, khiến KDP nóng ran lên và hỏng ngay lập tức nếu dùng laser công suất cao.
 - BBO có vùng trong suốt rất rộng, kéo dài xuống tận $189\text{ nm}$. Nhờ vậy, bước sóng $266\text{ nm}$ nằm cách rất xa vùng hấp thụ của BBO, giúp tinh thể an toàn và cho ra hiệu suất SHG cực kỳ mạnh mẽ.
 
+Với các môi trường đẳng hướng, trong cùng một vùng tán sắc thường (ở một phía so với vùng cộng hưởng $\omega=\omega_p$) thì điều kiện hợp pha không bao giờ xảy ra do hàm chiết suất theo tần số $n(\omega)$ là một hàm đơn điệu và hoàn toàn không phụ thuộc vào phương truyền bức xạ, suy ra:
+$$
+\begin{align*}
+n_\omega\ne n_{2\omega}
+\end{align*}
+$$
+Do đó, **trong thực tiễn người ta thường sử dụng các tinh thể dị hướng như là KDP, KTP, BBO,... để dễ dàng đạt được điều kiện hợp pha cho sự phát sóng hài bậc hai**, ngay trong cùng một vùng tán sắc thường (tức là trong suốt). Với các tinh thể dị hướng, chỉ cần xoay tinh thể hoặc phương truyền sáng một chút là chiết suất đã thay đổi nên có thể đạt được điều kiện hợp pha:
+$$n_{2\omega}(\theta',\phi')=n_\omega(\theta,\phi)$$
+
 b. Bất đối xứng tâm
 --
 Ngoài ra, như mọi sự phát sóng hài bậc chẵn mà SHG là một trường hợp, các tinh thể phù hợp để có hiện tượng SHG là các tinh thể không có đối xứng tâm (non-Centrosymmetric crystal). Điều này cũng có thể chứng minh nhờ một vài biến đổi toán học đơn giản. Vector phân cực điện môi theo phương thứ i trong hệ tọa độ x,y,z gắn với 3 trục chính quang học của tinh thể được khai triển dưới dạng:
@@ -200,18 +209,11 @@ $$\begin{align*}
 \end{align*}$$
 Vậy với tinh thể đối xứng tâm thì sự phát sóng hài bậc chẵn như SHG không thể xảy ra (do $\chi^{(2)}=\chi^{(4)}=...=0$), nhưng sự phát sóng hài bậc lẻ vẫn có thể xảy ra.
 
-Các chất rắn vô định hình như thủy tinh có sự sắp xếp hỗn độn của các phân tử, ion. Điều này làm cho các moment lưỡng cực điện tí hon $\vec{\mathbf{p}}$ phân bố ngẫu nhiên mọi hướng (giống như vector vận tốc của các phân tử trong mẫu khí lí tưởng). Về mặt vĩ mô, sự hỗn loạn này là như nhau theo mọi phương, môi trường có tinh chất như nhau theo mọi phương được gọi là môi trường đẳng hướng. Sự hỗn loạn này khiến cho moment lưỡng cực tĩnh trung bình bằng không $\langle \vec{\mathbf{p}} \rangle = \vec{\mathbf{0}}$ dẫn đến độ phân cực tuyến tính bằng không $\vec{\mathbf P}^{(1)}=N.\langle\vec{\mathbf p}\rangle$. Lưu ý: hoàn toàn hỗn loạn thì đẳng hướng, nhưng đẳng hướng không nhất thiết phải có nghĩa là hoàn toàn hỗn loạn.
+Các chất rắn vô định hình như thủy tinh có sự sắp xếp hỗn độn của các phân tử, ion. Điều này làm cho các moment lưỡng cực điện tí hon $\vec{\mathbf{p}}$ phân bố ngẫu nhiên mọi hướng (giống như vector vận tốc của các phân tử trong mẫu khí lí tưởng). Về mặt vĩ mô, sự hỗn loạn này là như nhau theo mọi phương, môi trường có tinh chất như nhau theo mọi phương được gọi là môi trường đẳng hướng. Sự hỗn loạn này khiến cho moment lưỡng cực tĩnh trung bình bằng không $\langle \vec{\mathbf{p}} \rangle = \vec{\mathbf{0}}$ dẫn đến độ phân cực tuyến tính bằng không $\vec{\mathbf P}^{(1)}=N.\langle\vec{\mathbf p}\rangle=\vec{\mathbf 0}$. Lưu ý: hoàn toàn hỗn loạn thì đẳng hướng, nhưng đẳng hướng không nhất thiết phải có nghĩa là hoàn toàn hỗn loạn. Các tinh thể có cấu trúc Zincblende (như GaAs, ZnTe) có mạng tinh thể đẳng hướng, tuần hoàn chứ không hề hỗn loạn.
 
 Tuy vậy, tính đẳng hướng vĩ mô này khiến cho vật liệu hành xử như một môi trường có đối xứng tâm. Khi có điện trường laser $\vec{\mathbf{E}}$ tác dụng, các thành phần phân cực phi tuyến bậc chẵn sẽ triệt tiêu lẫn nhau trên toàn thể tích, các thành phần phân cực bậc lẻ thì chỉ có bậc 1 (tuyến tính) bị triệt tiêu. Vì vậy, chất rắn vô định hình không thể tạo ra sóng hài bậc hai (SHG) hay các sóng hài bậc chẵn, nhưng chúng vẫn hoàn toàn có thể phát ra các sóng hài bậc lẻ (như sóng hài bậc ba - THG).
 
-Ngược lại, sự phát sóng hài bậc chẵn phải xảy ra với môi trường không có đối xứng tâm[^2]. Với các môi trường đẳng hướng, trong cùng một vùng tán sắc thường (ở một phía so với vùng cộng hưởng $\omega=\omega_p$) thì điều kiện hợp pha không bao giờ xảy ra do hàm chiết suất theo tần số $n(\omega)$ là một hàm đơn điệu và hoàn toàn không phụ thuộc vào phương truyền bức xạ, suy ra:
-$$
-\begin{align*}
-n_\omega\ne n_{2\omega}
-\end{align*}
-$$
-Do đó, **trong thực tiễn người ta thường sử dụng các tinh thể dị hướng như là KDP, KTP, BBO,... để dễ dàng đạt được điều kiện hợp pha cho sự phát sóng hài bậc hai**, ngay trong cùng một vùng tán sắc thường (tức là trong suốt). Với các tinh thể này, chỉ cần xoay tinh thể hoặc phương truyền sáng một chút là chiết suất đã thay đổi nên có thể đạt được điều kiện hợp pha:
-$$n_{2\omega}(\theta',\phi')=n_\omega(\theta,\phi)$$
+Ở chiều ngược lại, **sự phát sóng hài bậc chẵn phải xảy ra với môi trường không có đối xứng tâm**[^2]. 
 
 Ứng dụng của SHG
 -

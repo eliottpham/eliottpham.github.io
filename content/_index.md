@@ -1,7 +1,7 @@
 ---
-title: 'Home'
+title: 'Trang chủ'
 date: 2023-10-24
-type: landing
+type: book
 sections:
   - block: resume-biography
     content:
@@ -20,7 +20,7 @@ sections:
     content:
       filters:
         folders:
-          - blog
+          - quang-hoc-dai-cuong
     design:
       spacing:
         padding: ['3rem', 0, '6rem', 0]

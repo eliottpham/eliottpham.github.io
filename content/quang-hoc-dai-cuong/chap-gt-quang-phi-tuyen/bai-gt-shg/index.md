@@ -1,6 +1,8 @@
 ---
-title: Giới thiệu về sự phát sóng hài bậc hai
+title: Giới thiệu về sự phát sóng hài bậc hai (SHG)
 date: 2026-02-21
+weight: 10 # bài đầu tiên của chương thì đánh 10, bài tiếp theo của chương đánh 20,...
+type: book
 commentable: true
 draft: false
 math: true
@@ -26,11 +28,13 @@ cover:
     name: 
 authors:
   - me
+categories: 
+  - Quang học đại cương
 tags:
   - Quang học đại cương
+  - Giới thiệu về quang học phi tuyến
 content_meta:
   trending: false
-
 ---
 Trong sự phát sóng hài bậc hai (SHG), quá trình diễn ra như sau:
 - Hai photon giống nhau (tần số $\omega$) gặp nhau và tự hủy lẫn nhau (annihilation) dưới sự xúc tác của nguyên tử.
@@ -68,7 +72,15 @@ Vùng cấm năng lượng $E_g$ của KTP vào cỡ $3,2-3,5\text{eV}$. Tính t
 $$
 w_{v \to c}(\vec{\mathbf{k}})\propto |M(\vec{\mathbf k})|^2 \delta (E_c-E_v-2\hbar\omega)
 $$
-Theo vật lý chất rắn, năng lượng vùng cấm $E_g$ là khoảng cách nhỏ nhất giữa vùng dẫn và vùng hóa trị $E_c-E_v$. Do đó, với mọi $\vec{\mathbf{k}}$ thuộc vùng dẫn BZ, ta luôn có bất đẳng thức:
+Với $\delta (E_c-E_v-2\hbar\omega)$ là hàm delta-Dirac:
+$$
+\delta (x)=
+\begin{cases} 
+0,\quad \text{nếu } x\ne 0\\
+\infty,\quad \text{nếu } x=0
+\end{cases}
+$$
+Và $|M(\vec{\mathbf k})|^2$ là một hàm phụ thuộc $\vec{\mathbf k}$ không phục vụ cho mục đích trả lời câu hỏi của chúng ta. Theo vật lý chất rắn, năng lượng vùng cấm $E_g$ là khoảng cách nhỏ nhất giữa vùng dẫn và vùng hóa trị $E_c-E_v$. Do đó, với mọi $\vec{\mathbf{k}}$ thuộc vùng dẫn BZ, ta luôn có bất đẳng thức:
 
 $$
 \begin{align*}
@@ -103,15 +115,15 @@ $$\hbar(2\omega) = \hbar\omega + \hbar\omega$$
 Điều kiện hợp pha
 -
 Để sự phát sóng hài bậc hai diễn ra tối ưu thì cần thỏa **điều kiện hợp pha (Phase Matching)** về số sóng của hai photon tới và photon phát ra giữa hai photon tới và photon phát ra:
-$$\Delta \vec{\mathbf{k}} = \vec{\mathbf{k}}_{2\omega} - 2\vec{\mathbf{k}}_{\omega} = 0$$
+$$\Delta \vec{\mathbf{k}} = \vec{\mathbf{k}}_{2\omega} - 2\vec{\mathbf{k}}_{\omega} = 0,\quad \text{(Điều kiện hợp pha)}$$
 
 Điều này được chứng minh như thế nào?
 
 **Định hướng chứng minh:** Vì số sóng liên hệ trực tiếp tới động lượng hạt photon, ta chứng minh điều kiện hợp pha dựa trên định luật bảo toàn động lượng cho các photon tham gia vào quá trình SHG.
 
 **Chứng minh:** 
-Để năng lượng được chuyển đổi hiệu quả nhất từ sóng cơ bản sang sóng hài trong toàn bộ chiều dài tinh thể phi tuyến, động lượng của hệ photon cũng phải được bảo toàn. Động lượng của một photon tỉ lệ với vectơ số sóng $\vec{\mathbf{k}}$ theo hệ thức $\vec{\mathbf{p}} = \hbar \vec{\mathbf{k}}$.
-Phương trình bảo toàn động lượng:
+Để năng lượng được chuyển đổi hiệu quả nhất từ sóng cơ bản sang sóng hài trong toàn bộ chiều dài tinh thể phi tuyến, động lượng của hai photon tới phải bằng động lượng photo phát ra, nghĩa là không có sự hấp thụ động lượng của nguyên tử. Việc mạng tinh thể hấp thụ động lượng photon (ở cấp độ vi mô) chính là nguyên nhân của sự hấp thụ ánh sáng (ở cấp độ vĩ mô), điều cần loại trừ trong sự phát sóng hài bậc 2. Động lượng của một photon tỉ lệ với vectơ số sóng $\vec{\mathbf{k}}$ theo hệ thức $\vec{\mathbf{p}} = \hbar \vec{\mathbf{k}}$.
+Phương trình bảo toàn động lượng như sau:
 $$\hbar \vec{\mathbf{k}}_{2\omega} = \hbar \vec{\mathbf{k}}_{\omega} + \hbar \vec{\mathbf{k}}_{\omega}$$
 $$\Rightarrow\vec{\mathbf{k}}_{2\omega} = 2\vec{\mathbf{k}}_{\omega}$$
 Từ đó suy ra độ lệch pha (phase mismatch) phải bằng không:

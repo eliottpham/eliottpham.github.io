@@ -9,7 +9,7 @@
     languageCode: vi-VN # Mã vùng ngôn ngữ (Giúp SEO tốt hơn trên Google Việt Nam)
     title: Vật lí - toán
     params: 
-      description: Blog này được tạo ra nhằm lưu hỗ trợ giáo dục, lưu trữ đề thi, học liệu tham khảo cho sinh viên Vật lí
+      description: "Blog cá nhân lưu trữ đề thi, tài liệu học tập và bài viết tham khảo về Vật lí, Vật lí lượng tử, Cơ học giải tích và Toán học dành cho sinh viên."
   #en:
     #languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.

@@ -3,6 +3,10 @@ title: Giới thiệu về sự phát sóng hài bậc hai (SHG)
 date: 2026-02-21
 weight: 10 # bài đầu tiên của chương thì đánh 10, bài tiếp theo của chương đánh 20,...
 type: book
+bibliography: references-for-shg.bib
+link-citations: true
+nocite: '[@*]' #HIỂN THỊ TẤT CẢ TÀI LIỆU THAM KHẢO TRONG FILE .bib DÙ CÓ TRÍCH DẪN HAY KHÔNG
+toc: true
 commentable: true
 draft: false
 math: true
@@ -36,6 +40,7 @@ tags:
 content_meta:
   trending: false
 ---
+{{< toc >}}
 Trong sự phát sóng hài bậc hai (SHG), quá trình diễn ra như sau:
 - Hai photon giống nhau (tần số $\omega$) gặp nhau và tự hủy lẫn nhau (annihilation) dưới sự xúc tác của nguyên tử.
 - Chúng truyền năng lượng cho nguyên tử khiến đám mây electron "biến dạng đàn hồi".
@@ -68,7 +73,7 @@ $$E+\Delta E=3,2\text{eV}$$
 
 Vùng cấm năng lượng $E_g$ của KTP vào cỡ $3,2-3,5\text{eV}$. Tính toán thô ở trên cho ta nghi vấn là liệu có khả năng tồn tại một số ít electron chạm được tới đáy vùng dẫn để bắt đầu chuyển thành electron tự do không? Nếu điều này xảy ra, nó thực sự đã nuốt luôn hai photon vừa rồi (vì sau đó nó được tự do, electron tự do không thể tự phát ra photon).
 
-Để trả lời câu hỏi này, ta tính toán như sau: Giả sử mạng tinh thể đang chịu tương tác của điện trường laser tần số $\omega$, gây ra quá trình kích thích hai photon (với năng lượng kích thích tổng cộng là $2\hbar\omega$). Theo đó thì mật độ xác suất để electron chuyển dời trực tiếp từ trạng $\ket{v,\vec{\mathbf k}}$ trong vùng hóa trị đến trạng thái $\ket{c,\vec{\mathbf k}}$ trong vùng dẫn là:
+Để trả lời câu hỏi này, ta tính toán như sau: Giả sử mạng tinh thể đang chịu tương tác của điện trường laser tần số $\omega$, gây ra quá trình kích thích hai photon (với năng lượng kích thích tổng cộng là $2\hbar\omega$). Theo đó thì mật độ xác suất để electron chuyển dời trực tiếp từ trạng $\ket{v,\vec{\mathbf k}}$ trong vùng hóa trị đến trạng thái $\ket{c,\vec{\mathbf k}}$ trong vùng dẫn được cho bởi định lý vàng Fermi:
 $$
 w_{v \to c}(\vec{\mathbf{k}})\propto |M(\vec{\mathbf k})|^2 \delta (E_c-E_v-2\hbar\omega)
 $$
@@ -110,8 +115,6 @@ Sau một thời gian, nó sẽ có xác suất cao phát ra photon mới, chứ
 Nghĩa là độ bất định này chỉ đủ để một số ít electron nguyên tử vừa chạm tới vùng dẫn chứ không thoát ra khỏi nguyên tử được. Vậy, trong bức xạ sóng hài bậc hai, hai photon của chùm tới (gọi là chùm ánh sáng bơm) với tần số $\omega$ hợp nhất để tạo ra một photon mới (tần số $2\omega$). Năng lượng của hệ được bảo toàn, không có sự chuyển năng lượng sáng thành động năng ban đầu của electron khi bị bứt khỏi vùng dẫn: 
 $$\hbar(2\omega) = \hbar\omega + \hbar\omega$$
 
-Ở cấp độ vĩ mô, điều này chỉ thỏa mãn với các photon laser có tần số $\omega$ ở xa vùng hấp thụ $\omega_p$ của tinh thể, vì ở gần vùng hấp thụ này thì các electron thực sự có thể hấp thụ photon mà không nhả ra đủ lượng photon ban đầu khiến cho tất cả đám mây electron duy trì được trạng thái dao động tập thể theo thời gian. **Tinh thể sẽ bị nóng lên (với laser công suất cao thì có thể làm vỡ tinh thể). Vậy để hiện tượng SHG xảy ra, nguyên tử phải ở cách xa vùng hấp thụ của nó.**
-
 Điều kiện hợp pha
 -
 Để sự phát sóng hài bậc hai diễn ra tối ưu thì cần thỏa **điều kiện hợp pha (Phase Matching)** về số sóng của hai photon tới và photon phát ra giữa hai photon tới và photon phát ra:
@@ -127,10 +130,101 @@ Phương trình bảo toàn động lượng như sau:
 $$\hbar \vec{\mathbf{k}}_{2\omega} = \hbar \vec{\mathbf{k}}_{\omega} + \hbar \vec{\mathbf{k}}_{\omega}$$
 $$\Rightarrow\vec{\mathbf{k}}_{2\omega} = 2\vec{\mathbf{k}}_{\omega}$$
 Từ đó suy ra độ lệch pha (phase mismatch) phải bằng không:
-$$\Delta \vec{\mathbf{k}} = \vec{\mathbf{k}}_{2\omega} - 2\vec{\mathbf{k}}_{\omega} = 0$$
+$$\Delta \vec{\mathbf{k}} = \vec{\mathbf{k}}_{2\omega} - 2\vec{\mathbf{k}}_{\omega} = 0\tag{*}$$
 
-Ở cấp độ vĩ mô, điều này có ý nghĩa gì?
+**Ở cấp độ vĩ mô, điều này có ý nghĩa gì? **
+- Khi điều kiện này được thỏa mãn, các sóng hài sinh ra tại các vị trí khác nhau trong tinh thể sẽ **giao thoa tăng cường**, làm cường độ chùm SHG đạt cực đại ở đầu ra.
+- $k=\frac{n_\omega \times \omega}{c}$ nên từ $(*)$ suy ra chiết suất tại $2\omega$ phải bằng chiết suất tại $\omega$:
+$$n_{2\omega}=n_\omega$$
 
-Khi điều kiện này được thỏa mãn, các sóng hài sinh ra tại các vị trí khác nhau trong tinh thể sẽ **giao thoa tăng cường**, làm cường độ chùm SHG đạt cực đại ở đầu ra.
+Điều kiện để SHG xảy ra
+-
+a. Trong suốt
+--
+Ở cấp độ vĩ mô, SHG chỉ thỏa mãn với các photon laser có tần số $\omega$ ở xa vùng hấp thụ $\omega_p$ của tinh thể, vì ở gần vùng hấp thụ này thì các electron thực sự có thể hấp thụ photon mà không nhả ra đủ lượng photon ban đầu. Điều này cưỡng bức các đám mây electron duy trì được trạng thái dao động nhiệt tập thể với cường độ lớn theo thời gian. Do đó, tia laser với đặc tính cường độ cao sẽ gia nhiệt cục bộ cho vị trí được chiếu laser của tinh thể thông qua sự hấp thụ bức xạ, phá vỡ tính hợp pha và gây giãn nở nhiệt cục bộ cho vị trí chiếu tia. Như một ly thủy tinh dày có thể bị nứt vỡ nếu ta đổ đột ngột nước nóng vào trong, **tinh thể sẽ bị nóng lên không đồng đều và với laser công suất cao thì có thể làm vỡ tinh thể. Vậy để hiện tượng SHG xảy ra, các tia laser chiếu tới ($\omega$) và phát ra ($2\omega$ or $\omega$) phải ở cách xa vùng hấp thụ của nó.**
 
+**Ví dụ:**
+- Giả sử mục đích của ta là chuyển ánh sáng xanh $532\text{nm}$ thành tia laser tử ngoại $266\text{nm}$ thông qua hiệu ứng SHG (vì laser ánh sáng xanh $532\text{nm}$ đã được chế tạo thành công).
+- Ta không thể sử dụng tinh thể KDP vì vùng hấp thụ của KDP ngay khoảng $250\text{nm} - 260\text{nm}$. Tia $266\text{ nm}$ sinh ra nằm quá sát vùng cộng hưởng này, khiến KDP nóng ran lên và hỏng ngay lập tức nếu dùng laser công suất cao.
+- BBO có vùng trong suốt rất rộng, kéo dài xuống tận $189\text{ nm}$. Nhờ vậy, bước sóng $266\text{ nm}$ nằm cách rất xa vùng hấp thụ của BBO, giúp tinh thể an toàn và cho ra hiệu suất SHG cực kỳ mạnh mẽ.
+
+b. Bất đối xứng tâm
+--
+Ngoài ra, như mọi sự phát sóng hài bậc chẵn mà SHG là một trường hợp, các tinh thể phù hợp để có hiện tượng SHG là các tinh thể không có đối xứng tâm (non-Centrosymmetric crystal). Điều này cũng có thể chứng minh nhờ một vài biến đổi toán học đơn giản. Vector phân cực điện môi theo phương thứ i trong hệ tọa độ x,y,z gắn với 3 trục chính quang học của tinh thể được khai triển dưới dạng:
+$$
+{P_i}=\epsilon_0(\sum_{j}\chi_{ij}E_j + \sum_{ij}\chi_{ijk}E_{j}E_{k}+...)
+$$
+
+Biểu thức trên thường được viết gọn như sau, là một sự lạm dụng kí hiệu (abuse of notation) không chuẩn chỉnh về mặt toán học nhưng tiện lợi và dễ hình dung hơn, rất thường gặp trong các giáo trình trong và ngoài nước:
+$$
+P=\epsilon_0(\chi^{(1)}E+\chi^{(2)}E^2+\chi^{(3)}E^3+...)\tag{3}
+$$
+Trong đó, $\chi^{(1)}$, $\chi^{(2)}$ là các tensor độ cảm điện. Sự đối xứng tâm sẽ dẫn tới việc biểu thức trên sẽ không đổi khi ta tưởng tượng nghịch đảo không gian qua một tâm đối xứng O nào đó (nghĩa là đổi x thành -x, y thành -y, z thành -z).
+
+Nhìn chung, để khảo sát ảnh hưởng của sự đối xứng tâm lên các công thức Vật lí, ta thường xét phép biến đổi nghịch đảo không gian qua một tâm đối xứng O. 
+
+Khi nghịch đảo như vậy, các thành phần của mọi vector sẽ bị nghịch đảo, nghĩa là:
+$$
+\begin{align}
+&P\to -P\\
+&E\to -E\\
+&E^2\to E^2, \quad (\text{Không đổi vì là số hạng bậc hai})\\
+&...
+\end{align}
+$$
+Do đó, biểu thức $(3)$ sẽ trở thành:
+$$
+\begin{align}
+&&-&P = \epsilon_0(-\chi^{(1)}E+\chi^{(2)}E^2 - \chi^{(3)}E^3+...)\notag\\
+\Rightarrow&&&P = \epsilon_0(\chi^{(1)}E-\chi^{(2)}E^2 + \chi^{(3)}E^3-...)\tag{4}
+\end{align}
+$$
+
+Nếu tinh thể có đối xứng tâm thì vector phân cực điện môi của nó phải bất biến đối với phép nghịch đảo không gian: 
+$$
+P \to P, \quad \text{khi}
+\begin{cases}
+x\to-x\\
+y\to-y\\
+z\to-z
+\end{cases}
+$$
+
+Đồng nhất (3) và (4) ta được:
+$$\begin{align}
+\chi^{(1)}&=\chi^{(1)}\quad \text{(Luôn đúng)}\\
+\chi^{(2)} &= -\chi^{(2)} \Rightarrow \color{red} \boldsymbol{\chi^{(2)}=0}\\
+\chi^{(3)}&=\chi^{(3)}\quad \text{(Luôn đúng)}\\
+\chi^{(4)} &= -\chi^{(4)} \Rightarrow \color{red} \boldsymbol{\chi^{(4)}=0}\\
+...&
+\end{align}$$
+Vậy với tinh thể đối xứng tâm thì sự phát sóng hài bậc chẵn như SHG không thể xảy ra (do $\chi^{(2)}=\chi^{(4)}=...=0$), nhưng sự phát sóng hài bậc lẻ vẫn có thể xảy ra.
+
+Các chất rắn vô định hình như thủy tinh có sự sắp xếp hỗn độn của các phân tử, ion. Điều này làm cho các moment lưỡng cực điện tí hon $\vec{\mathbf{p}}$ phân bố ngẫu nhiên mọi hướng (giống như vector vận tốc của các phân tử trong mẫu khí lí tưởng). Về mặt vĩ mô, sự hỗn loạn này là như nhau theo mọi phương, môi trường có tinh chất như vậy được gọi là môi trường đẳng hướng. Sự hỗn loạn này dẫn đến moment lưỡng cực tĩnh trung bình bằng không $\langle \vec{\mathbf{p}} \rangle = \vec{\mathbf{0}}$ dẫn đến độ phân cực tuyến tính bằng không $\vec{\mathbf P}^{(1)}=N.\langle\vec{\mathbf p}\rangle$
+
+Tuy vậy, tính đẳng hướng vĩ mô này khiến cho vật liệu hành xử như một môi trường có đối xứng tâm. Khi có điện trường laser $\vec{\mathbf{E}}$ tác dụng, các thành phần phân cực phi tuyến bậc chẵn sẽ triệt tiêu lẫn nhau trên toàn thể tích, các thành phần phân cực bậc lẻ thì chỉ có bậc 1 (tuyến tính) bị triệt tiêu. Vì vậy, chất rắn vô định hình không thể tạo ra sóng hài bậc hai (SHG) hay các sóng hài bậc chẵn, nhưng chúng vẫn hoàn toàn có thể phát ra các sóng hài bậc lẻ (như sóng hài bậc ba - THG).
+
+Ngược lại, sự phát sóng hài bậc chẵn phải xảy ra với môi trường không có đối xứng tâm[^2]. Với các môi trường đẳng hướng, trong cùng một vùng tán sắc thường (ở một phía so với vùng cộng hưởng $\omega=\omega_p$) thì điều kiện hợp pha không bao giờ xảy ra do hàm chiết suất theo tần số $n(\omega)$ là một hàm đơn điệu và hoàn toàn không phụ thuộc vào phương truyền bức xạ, suy ra:
+$$
+\begin{align}
+n_\omega\ne n_{2\omega}
+\end{align}
+$$
+Do đó, **trong thực tiễn người ta thường sử dụng các tinh thể dị hướng như là KDP, KTP, BBO,... để dễ dàng đạt được điều kiện hợp pha cho sự phát sóng hài bậc hai**, ngay trong cùng một vùng tán sắc thường (tức là trong suốt). Với các tinh thể này, chỉ cần xoay tinh thể hoặc phương truyền sáng một chút là chiết suất đã thay đổi nên có thể đạt được điều kiện hợp pha:
+$$n_{2\omega}(\theta',\phi')=n_\omega(\theta,\phi)$$
+
+Ứng dụng của SHG
+-
+(to be continued).
+
+**Mời bạn góp ý, phản biện hoặc đặt câu hỏi trong comment section bên dưới cùng.**
+
+
+## Chú thích
 [^1]: Nhiệt bản chất là sự chuyển động tập thể của cả khối vật chất gồm rất nhiều tỉ hạt, động năng **trung bình** của chúng là nhiệt năng.
+[^2]: Có đối xứng tâm hay không thì liên quan tới phép nghịch đảo không gian như đã trình bày, còn dị hướng hay đẳng hướng lại liên quan tới phép quay không gian: chính là phép biến đổi các tọa độ góc $\theta,\phi$ bất kì một lượng $\Delta\theta,\Delta\phi$ nào đó, trong khi biến tọa độ xuyên tâm $r$ lại bất biến. Ngược lại, ở phép nghịch đảo không gian thì $r\to-r$. Do đó, hai cặp khái niệm "đẳng hướng/dị hướng" và "có đối xứng tâm/bất đối xứng tâm" không tương đương với nhau.
+
+## Tài liệu tham khảo
+<span style="display:none;">
+[@boyd2020nonlinear; @slideshare_shg; @ngo_phuong_chap1; @ngo_phuong_chap2; @ngo_phuong_phan2; @ngo_phuong_chap3; @wiki_shg]
+</span>

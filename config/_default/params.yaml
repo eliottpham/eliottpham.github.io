@@ -184,7 +184,7 @@ hugoblox:
   # COMMENTS
   # User comments system
   # ────────────────────────────────────────────────────────────────────────────
-  comments:
+  comment:
     enable: true
     provider: "disqus"                        # giscus | disqus
     disqus:

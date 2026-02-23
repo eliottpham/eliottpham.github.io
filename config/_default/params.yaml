@@ -286,3 +286,9 @@ hugoblox:
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
+features:
+  comment:
+    provider: 'disqus'
+    disqus:
+      shortname: 'https-eliottpham-github-io'
+      show_count: true

@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Blog cá nhân lưu trữ đề thi, học liệu và hỗ trợ giáo dục cho sinh viên Vật lí."
+    description: "Blog cá nhân lưu trữ đề thi, tài liệu học tập, và bài viết tham khảo về Vật lí, Vật lí lượng tử, Cơ học giải tích, Toán học dành cho sinh viên Vật lí."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "MakeOwnable"              # Twitter/X handle for Twitter Cards (without @)
@@ -188,7 +188,7 @@ hugoblox:
     enable: true
     provider: "disqus"                        # giscus | disqus
     disqus:
-      shortname: "https://eliottpham.github.io/" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
+      shortname: "https-eliottpham-github-io" # Thay bằng đúng cái shortname bạn vừa tạo ở Bước 1
       show_count: true # Bật tính năng đếm số lượng comment hiển thị ngoài trang chủ
 
   # ────────────────────────────────────────────────────────────────────────────
@@ -216,7 +216,7 @@ hugoblox:
   # Search engine site verification codes
   # ────────────────────────────────────────────────────────────────────────────
   verification:
-    google: ""
+    google: "aNfLUW4QDxRa0j2gc6HM3M7aqOXU2lCZlo2TPrGbe0k"
     bing: ""
     baidu: ""
     yandex: ""

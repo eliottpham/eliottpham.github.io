@@ -13,13 +13,13 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Vật lí - toán"
+    name: "Blog Vật lí - Toán"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: "Khoa Vật lí - trường đại học Sư phạm Tp.HCM"
+    organization: "Khoa Vật lí - Trường Đại học Sư phạm Tp.HCM"
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "vật lí, vật lí lượng tử, quang học, cơ học giải tích, giải tích, toán học"
+    tagline: "Chia sẻ niềm đam mê và kiến thức về Vật lí và Toán học." # Biến thành một câu slogan
     # Site meta description for search engines and social sharing
     description: "Blog cá nhân lưu trữ đề thi, tài liệu học tập, và bài viết tham khảo về Vật lí, Vật lí lượng tử, Cơ học giải tích, Toán học dành cho sinh viên Vật lí."
     # Social accounts (used for meta tags like Twitter Cards)
@@ -129,7 +129,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Blog Vật lí & Toán học | Phạm Huy Khang" # Tiêu đề chuẩn SEO xuất hiện trên Google
     # For local_business identity type only
     location:
       address:

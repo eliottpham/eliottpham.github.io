@@ -96,10 +96,10 @@ $$
 
 Mà hai photo không đủ để cung cấp năng lượng để electron vượt qua khỏi vùng cấm để tiến vào được vùng dẫn BZ nên: 
 $$
-\begin{align}
+\begin{align*}
 2\hbar\omega< E_g
 \tag{2}
-\end{align} 
+\end{align*} 
 $$
 
 Kết hợp $(1)$ với $(2)$, ta có: 
@@ -132,7 +132,7 @@ $$\Rightarrow\vec{\mathbf{k}}_{2\omega} = 2\vec{\mathbf{k}}_{\omega}$$
 Từ đó suy ra độ lệch pha (phase mismatch) phải bằng không:
 $$\Delta \vec{\mathbf{k}} = \vec{\mathbf{k}}_{2\omega} - 2\vec{\mathbf{k}}_{\omega} = 0\tag{*}$$
 
-**Ở cấp độ vĩ mô, điều này có ý nghĩa gì? **
+**Ở cấp độ vĩ mô, điều này có ý nghĩa gì?**
 - Khi điều kiện này được thỏa mãn, các sóng hài sinh ra tại các vị trí khác nhau trong tinh thể sẽ **giao thoa tăng cường**, làm cường độ chùm SHG đạt cực đại ở đầu ra.
 - $k=\frac{n_\omega \times \omega}{c}$ nên từ $(*)$ suy ra chiết suất tại $2\omega$ phải bằng chiết suất tại $\omega$:
 $$n_{2\omega}=n_\omega$$
@@ -165,19 +165,19 @@ Nhìn chung, để khảo sát ảnh hưởng của sự đối xứng tâm lên
 
 Khi nghịch đảo như vậy, các thành phần của mọi vector sẽ bị nghịch đảo, nghĩa là:
 $$
-\begin{align}
+\begin{align*}
 &P\to -P\\
 &E\to -E\\
 &E^2\to E^2, \quad (\text{Không đổi vì là số hạng bậc hai})\\
 &...
-\end{align}
+\end{align*}
 $$
 Do đó, biểu thức $(3)$ sẽ trở thành:
 $$
-\begin{align}
+\begin{align*}
 &&-&P = \epsilon_0(-\chi^{(1)}E+\chi^{(2)}E^2 - \chi^{(3)}E^3+...)\notag\\
 \Rightarrow&&&P = \epsilon_0(\chi^{(1)}E-\chi^{(2)}E^2 + \chi^{(3)}E^3-...)\tag{4}
-\end{align}
+\end{align*}
 $$
 
 Nếu tinh thể có đối xứng tâm thì vector phân cực điện môi của nó phải bất biến đối với phép nghịch đảo không gian: 
@@ -191,24 +191,24 @@ z\to-z
 $$
 
 Đồng nhất (3) và (4) ta được:
-$$\begin{align}
+$$\begin{align*}
 \chi^{(1)}&=\chi^{(1)}\quad \text{(Luôn đúng)}\\
 \chi^{(2)} &= -\chi^{(2)} \Rightarrow \color{red} \boldsymbol{\chi^{(2)}=0}\\
 \chi^{(3)}&=\chi^{(3)}\quad \text{(Luôn đúng)}\\
 \chi^{(4)} &= -\chi^{(4)} \Rightarrow \color{red} \boldsymbol{\chi^{(4)}=0}\\
 ...&
-\end{align}$$
+\end{align*}$$
 Vậy với tinh thể đối xứng tâm thì sự phát sóng hài bậc chẵn như SHG không thể xảy ra (do $\chi^{(2)}=\chi^{(4)}=...=0$), nhưng sự phát sóng hài bậc lẻ vẫn có thể xảy ra.
 
-Các chất rắn vô định hình như thủy tinh có sự sắp xếp hỗn độn của các phân tử, ion. Điều này làm cho các moment lưỡng cực điện tí hon $\vec{\mathbf{p}}$ phân bố ngẫu nhiên mọi hướng (giống như vector vận tốc của các phân tử trong mẫu khí lí tưởng). Về mặt vĩ mô, sự hỗn loạn này là như nhau theo mọi phương, môi trường có tinh chất như vậy được gọi là môi trường đẳng hướng. Sự hỗn loạn này dẫn đến moment lưỡng cực tĩnh trung bình bằng không $\langle \vec{\mathbf{p}} \rangle = \vec{\mathbf{0}}$ dẫn đến độ phân cực tuyến tính bằng không $\vec{\mathbf P}^{(1)}=N.\langle\vec{\mathbf p}\rangle$
+Các chất rắn vô định hình như thủy tinh có sự sắp xếp hỗn độn của các phân tử, ion. Điều này làm cho các moment lưỡng cực điện tí hon $\vec{\mathbf{p}}$ phân bố ngẫu nhiên mọi hướng (giống như vector vận tốc của các phân tử trong mẫu khí lí tưởng). Về mặt vĩ mô, sự hỗn loạn này là như nhau theo mọi phương, môi trường có tinh chất như nhau theo mọi phương được gọi là môi trường đẳng hướng. Sự hỗn loạn này khiến cho moment lưỡng cực tĩnh trung bình bằng không $\langle \vec{\mathbf{p}} \rangle = \vec{\mathbf{0}}$ dẫn đến độ phân cực tuyến tính bằng không $\vec{\mathbf P}^{(1)}=N.\langle\vec{\mathbf p}\rangle$. Lưu ý: hoàn toàn hỗn loạn thì đẳng hướng, nhưng đẳng hướng không nhất thiết phải có nghĩa là hoàn toàn hỗn loạn.
 
 Tuy vậy, tính đẳng hướng vĩ mô này khiến cho vật liệu hành xử như một môi trường có đối xứng tâm. Khi có điện trường laser $\vec{\mathbf{E}}$ tác dụng, các thành phần phân cực phi tuyến bậc chẵn sẽ triệt tiêu lẫn nhau trên toàn thể tích, các thành phần phân cực bậc lẻ thì chỉ có bậc 1 (tuyến tính) bị triệt tiêu. Vì vậy, chất rắn vô định hình không thể tạo ra sóng hài bậc hai (SHG) hay các sóng hài bậc chẵn, nhưng chúng vẫn hoàn toàn có thể phát ra các sóng hài bậc lẻ (như sóng hài bậc ba - THG).
 
 Ngược lại, sự phát sóng hài bậc chẵn phải xảy ra với môi trường không có đối xứng tâm[^2]. Với các môi trường đẳng hướng, trong cùng một vùng tán sắc thường (ở một phía so với vùng cộng hưởng $\omega=\omega_p$) thì điều kiện hợp pha không bao giờ xảy ra do hàm chiết suất theo tần số $n(\omega)$ là một hàm đơn điệu và hoàn toàn không phụ thuộc vào phương truyền bức xạ, suy ra:
 $$
-\begin{align}
+\begin{align*}
 n_\omega\ne n_{2\omega}
-\end{align}
+\end{align*}
 $$
 Do đó, **trong thực tiễn người ta thường sử dụng các tinh thể dị hướng như là KDP, KTP, BBO,... để dễ dàng đạt được điều kiện hợp pha cho sự phát sóng hài bậc hai**, ngay trong cùng một vùng tán sắc thường (tức là trong suốt). Với các tinh thể này, chỉ cần xoay tinh thể hoặc phương truyền sáng một chút là chiết suất đã thay đổi nên có thể đạt được điều kiện hợp pha:
 $$n_{2\omega}(\theta',\phi')=n_\omega(\theta,\phi)$$
@@ -219,12 +219,25 @@ $$n_{2\omega}(\theta',\phi')=n_\omega(\theta,\phi)$$
 
 **Mời bạn góp ý, phản biện hoặc đặt câu hỏi trong comment section bên dưới cùng.**
 
+## Tài liệu tham khảo
+[1]   R. W. Boyd, *Nonlinear optics*, 4th ed., vol. 1–2. Academic Press, 2020. Accessed: Feb. 24, 2026. [Online]. Available: https://drive.google.com/file/d/1utLEO4wOLUjXiMjlr2mUOCiil9ipiSAe/view?usp=drive_link
+
+[2]   “Sự phát sóng hài bậc II,” *SlideShare*. https://www.slideshare.net/slideshow/s-pht-sng-hi-bc-ii/45982843 (accessed Feb. 24, 2026).
+
+[3]   P. Ngô Thị , “Advanced optics chap 1: Hiện tượng tán sắc ánh sáng,” *Slideshare*. https://www.slideshare.net/slideshow/advanced-optics-chap-1/29217512
+
+[4]   P. Ngô Thị, “Chuyên đề quang học - advanced optics: Chương 2 - phân cực ánh sáng,” *Slideshare*. https://drive.google.com/file/d/1F34pamgv7OaNbEUZAVYGs8ObnuTgabFk/view (accessed Feb. 24, 2026).
+
+[5]   P. Ngô Thị, “Chuyên đề quang học - advanced optics: Phần 2 - phân cực qua môi trường dị hướng,” *Google Drive*. https://drive.google.com/file/d/1u89lq94iof6hEWqycYwLjGYcEaTHN1_f/view (accessed Feb. 24, 2026).
+
+[6]   P. Ngô Thị , “Chuyên đề quang học - advanced optics: Chương 3,” *Google Drive*. https://www.slideshare.net/slideshow/chng-3-make-by-ngo-thi-phuong/29217526 (accessed Feb. 24, 2026).
+
+[7]   “Second-harmonic generation,” *Wikipedia*. https://en.wikipedia.org/wiki/Second-harmonic_generation (accessed Feb. 24, 2026).
 
 ## Chú thích
 [^1]: Nhiệt bản chất là sự chuyển động tập thể của cả khối vật chất gồm rất nhiều tỉ hạt, động năng **trung bình** của chúng là nhiệt năng.
-[^2]: Có đối xứng tâm hay không thì liên quan tới phép nghịch đảo không gian như đã trình bày, còn dị hướng hay đẳng hướng lại liên quan tới phép quay không gian: chính là phép biến đổi các tọa độ góc $\theta,\phi$ bất kì một lượng $\Delta\theta,\Delta\phi$ nào đó, trong khi biến tọa độ xuyên tâm $r$ lại bất biến. Ngược lại, ở phép nghịch đảo không gian thì $r\to-r$. Do đó, hai cặp khái niệm "đẳng hướng/dị hướng" và "có đối xứng tâm/bất đối xứng tâm" không tương đương với nhau.
+[^2]: Có đối xứng tâm hay không thì liên quan tới phép nghịch đảo không gian như đã trình bày, còn dị hướng hay đẳng hướng lại liên quan tới phép quay không gian: chính là phép biến đổi các tọa độ góc $\theta,\phi$ bất kì một lượng $\Delta\theta,\Delta\phi$ nào đó, trong khi biến tọa độ xuyên tâm $r$ lại bất biến. Mặt khác, ở phép nghịch đảo không gian thì các biến góc tăng hoặc giảm đi lượng $\pi$. Do đó, hai cặp khái niệm "đẳng hướng/dị hướng" và "có đối xứng tâm/bất đối xứng tâm" không tương đương với nhau.
 
-## Tài liệu tham khảo
 <span style="display:none;">
 [@boyd2020nonlinear; @slideshare_shg; @ngo_phuong_chap1; @ngo_phuong_chap2; @ngo_phuong_phan2; @ngo_phuong_chap3; @wiki_shg]
 </span>
